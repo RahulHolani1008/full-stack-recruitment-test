@@ -19,7 +19,11 @@
     "Angular",
     "Flights",
     "HTML5",
-    "SCSS"
+    "SCSS",
+    "ng-bootstrap",
+    "bootstrap",
+    "FontAwesome",
+    "FontAwesome5"
   ],
   "author": "Rahul Holani",
   "license": "ISC",
