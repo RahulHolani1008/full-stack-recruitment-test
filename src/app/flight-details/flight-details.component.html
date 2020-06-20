@@ -1,4 +1,4 @@
-<div class="card centered w-90p mt-4" *ngFor="let data of website">
+<div class="card centered w-90p mt-4 mb-4" *ngFor="let data of website">
     <div class="card-body">
         <div class="table-responsive">
             <table class="centered full-width" *ngFor="let airline of data['airlineData']">
@@ -12,7 +12,7 @@
                 </tr>
                 <tr class="text-center centered flight-details min-height">
                     <td>
-                        <img src={{airline.id}}>
+                        <img src={{airline.id}} height="30px" width="30px">
                     </td>
                     <td></td>
                     <td>

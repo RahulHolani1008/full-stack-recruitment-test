@@ -18,7 +18,7 @@ export class FlightDetailsComponent implements OnInit {
       Company.legs.forEach(leg => {
         let rawDataFile = Flights.legs[Flights.legs.findIndex(x => x.id == leg)]
         let flightDisplayData: FlightDisplayData = {
-          id: rawDataFile["id"],
+          id: rawDataFile["airline_id"],
           startTiming: rawDataFile["departure_time"],
           endTiming: rawDataFile["arrival_time"],
           startLocation: rawDataFile["departure_airport"],
