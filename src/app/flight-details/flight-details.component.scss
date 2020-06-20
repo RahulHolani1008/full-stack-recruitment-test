@@ -1,0 +1,17 @@
+.flight-details{
+    display: grid;
+    grid-template-columns: 10fr 20fr 25fr 20fr 100fr 20fr;
+}
+
+@media only screen and (max-width: 600px) {
+    .flight-details{
+        display: grid;
+        grid-template-columns: 10fr 20fr 25fr 20fr 20fr 30fr;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .w-90p{
+        width: 50%;
+    }
+}

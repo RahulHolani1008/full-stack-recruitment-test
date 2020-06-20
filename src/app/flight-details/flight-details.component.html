@@ -1,0 +1,36 @@
+<div class="card centered w-90p mt-4" *ngFor="let data of website">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="centered full-width" *ngFor="let airline of data[2]">
+                <tr class="text-center flight-details">
+                    <td></td>
+                    <td>{{airline.startTiming}}</td>
+                    <td></td>
+                    <td>{{airline.endTiming}}</td>
+                    <td> </td>
+                    <td>{{airline.duration}}</td>
+                </tr>
+                <tr class="text-center centered airline-details">
+                    <td>
+                        <img src="https://logos.skyscnr.com/images/airlines/favicon/leg_1.png">
+                    </td>
+                    <td></td>
+                    <td>
+                        <i class="fas fa-arrow-right"></i>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="text-center flight-details">
+                    <td> </td>
+                    <td>{{airline.startLocation}}</td>
+                    <td> </td>
+                    <td>{{airline.endLocation}}</td>
+                    <td> </td>
+                    <td>{{airline.type}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
