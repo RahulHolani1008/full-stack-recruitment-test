@@ -1,7 +1,7 @@
 <div class="card centered w-90p mt-4" *ngFor="let data of website">
     <div class="card-body">
         <div class="table-responsive">
-            <table class="centered full-width" *ngFor="let airline of data[2]">
+            <table class="centered full-width" *ngFor="let airline of data['airlineData']">
                 <tr class="text-center flight-details">
                     <td></td>
                     <td>{{airline.startTiming}}</td>
@@ -10,9 +10,9 @@
                     <td> </td>
                     <td>{{airline.duration}}</td>
                 </tr>
-                <tr class="text-center centered airline-details">
+                <tr class="text-center centered flight-details min-height">
                     <td>
-                        <img src="https://logos.skyscnr.com/images/airlines/favicon/leg_1.png">
+                        <img src={{airline.id}}>
                     </td>
                     <td></td>
                     <td>
@@ -28,9 +28,15 @@
                     <td> </td>
                     <td>{{airline.endLocation}}</td>
                     <td> </td>
-                    <td>{{airline.type}}</td>
-                </tr>
+                    <td [ngClass]="{'--red': airline.type.includes('Stop'),'--teal': !airline.type.includes('Stop')}">{{airline.type}}</td>
+                </tr> 
+                <BR />
+                <BR />
             </table>
+            <span class="fs--32">{{data['price']}}</span>
+            <BR />
+            <span class="fs--20 --lightGray">{{data['agent']}}</span>
+            <button class="btn --white --tealBG btn-lg position-absolute bottom-20 right-20 fs--20">Select</button>
         </div>
     </div>
 </div>

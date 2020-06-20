@@ -1,19 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
-
 .w-90p{
     width: 90%;
 }
-
 .centered{
     margin-left: auto;
     margin-right: auto;
 }
-
 .full-width{
     width: 100%;
 }
-
 .text-center{
     text-align: center;
+}
+.min-height{
+    height: 10px;
+    margin-top: -15px;
+}
+.--red{
+    color: #dc3545;
+}
+.--teal{
+    color: #00a698;
+}
+.--tealBG{
+    background-color: #00a698;
+}
+.--blue{
+    color: #3f73c2
+}
+.--lightGray{
+    color: lightgray;
+}
+.--white{
+    color: #ffffff;
+    &:hover{
+        color: #ffffff;
+    }
+}
+.fs--20{
+    font-size: 20px;
+}
+.fs--32{
+    font-size: 32px;
+}
+.font-weight-medium{
+    font-weight: 500;
+}
+.position-absolute{
+    position: absolute;
+}
+.right-20{
+    right: 20px;
+}
+.bottom-20{
+    bottom: 20px;
 }
