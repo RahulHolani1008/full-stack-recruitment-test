@@ -28,8 +28,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },

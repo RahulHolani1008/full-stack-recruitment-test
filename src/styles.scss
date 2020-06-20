@@ -24,7 +24,7 @@
     color: #00a698;
 }
 .--tealBG{
-    background-color: #00a698;
+    background-color: #00a698 !important;
 }
 .--blue{
     color: #3f73c2
@@ -36,9 +36,9 @@
     background-color: rgb(241, 241, 241);
 }
 .--white{
-    color: #ffffff;
+    color: #ffffff !important;
     &:hover{
-        color: #ffffff;
+        color: #ffffff !important;
     }
 }
 .fs--20{

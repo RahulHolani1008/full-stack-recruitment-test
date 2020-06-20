@@ -4,7 +4,7 @@
 ### A) I have used the following libraries on the front-end: Angular: For web development, Bootstrap: For a default look and feel for the website, FontAwesome: For icons
 
 ### Q) What's the command to start the application locally?
-### A) ng serve OR npm run start
+### A) ng serve OR npm run start OR simply: npm start
 
 # General:
 
